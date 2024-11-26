@@ -1,9 +1,36 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/images/logo.svg";
+import verdensskove from "../assets/images/verdensskove.webp";
 ---
 
-<h2 class="text-h2text">Vi vil gøre en forskel</h2>
-<div class="flex justify-center">
+<h2 class="text-h2text text-center mb-6">Vi vil gøre en forskel</h2>
+
+<div class="flex justify-center mb-4">
   <Image src={logo} alt="logo" />
 </div>
+
+<section class="relative w-full max-w-7xl mx-auto h-72 mb-4">
+  <div class="absolute inset-0 w-full h-full overflow-hidden rounded-lg">
+    <Image
+      src={verdensskove}
+      alt="verdensskove"
+      class="object-cover w-full h-full"
+    />
+  </div>
+
+  <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+
+  <div
+    class="relative z-10 flex flex-col items-center justify-center h-full px-4"
+  >
+    <div class="text-center text-farvenavn-primaryLight">
+      <p class="text-lg md:text-2xl font-semibold">
+        Vi støtter Verdens Skoves arbejde med bevarelse og bæredygtig brug af
+        verdens skove. Vi har allerede fredet 106.785 m² regnskov. For hver
+        tilmeldelse vi får planter vi 5 træer. Det er vi stolte af i
+        Höjskolendk.
+      </p>
+    </div>
+  </div>
+</section>
