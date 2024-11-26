@@ -1,5 +1,19 @@
 ---
+const { variant = "primary", size = "medium" } = Astro.props;
+
+const buttonStyling =
+  "rounded-full px-8 p-2 transition transform hover:-translate-y-1";
+
+const variantClasses = {
+  primary: "bg-farvenavn-accent text-farvenavn-primaryLight",
+  secondary: "bg-farvenavn-primary text-farvenavn-primaryLight",
+};
+
+// const sizeClasses = {
+//   large: "text-2xl",
+//   medium: "text-lg",
+//   small: "text-base",
+// };
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
-</div>
+
+<button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>
