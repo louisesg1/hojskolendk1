@@ -25,20 +25,22 @@ export default {
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
     fontFamily: {
-      sans: ["Prompt", "sans-serif"],
-      display: ["Courier", "monospace"] /* eksempel på ekstra font */,
+      sans: ["Bricolage Grotesque", "sans-serif"],
     },
 
     /* Tilføj dit typografiske hierarki herunder */
-    // fontSize: {
-    //     base: ['1rem', { lineHeight: '1.5rem' }],
-    //     large: ['2.5rem', { lineHeight: '3.75rem' }],
-    //   },
+    fontSize: {
+      base: ["1rem", { lineHeight: "1.5rem" }],
+      large: ["2.5rem", { lineHeight: "3.75rem" }],
+      maintext: ["1rem", { lineHeight: "1.5rem" }],
+      h1text: ["5rem", { lineHeight: "1.5rem" }],
+    },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
-    //   fontWeight: {
-    //     regular: '400',
-    //   },
+    fontWeight: {
+      regular: "400",
+      light: "100",
+    },
 
     /* Borders - borderstørrelser herunder */
     // borderWidth: {
