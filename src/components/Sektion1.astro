@@ -1,10 +1,13 @@
 ---
-
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
 ---
 
 <section>
   <h1>En rejseoplevelse du aldrig vil glemme</h1>
-  <img src="" alt="logo" />
+  <div class="flex justify-center">
+    <Image src={logo} alt="logo" />
+  </div>
   <p>
     HÖJSKOLENDK er en dansk rejsehøjskole for unge i alderen ca. 18-30 år. Vi
     brænder for spændende oplevelser, fællesskab og mødet med nye mennesker og
