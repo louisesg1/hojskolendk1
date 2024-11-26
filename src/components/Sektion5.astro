@@ -1,76 +1,90 @@
 ---
-
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
 ---
 
-<h2>Anmeldelser fra rejsende</h2>
-<img src="" alt="logo" />
-<section class="grid grid-cols-4 gap-4">
-  <div id="card">
-    <a
-      href="#"
-      class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-    >
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+<h2 class="text-h2text text-center text-3xl font-semibold mb-8">
+  Anmeldelser fra rejsende
+</h2>
+
+<div class="flex justify-center">
+  <Image src={logo} alt="logo" />
+</div>
+
+<section class="max-w-7xl mx-auto px-4">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+  >
+    <div id="card" class="flex justify-center">
+      <a
+        href="https://dk.trustpilot.com/review/www.hojskolendk.dk"
+        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
-        Naja
-      </h5>
-      <p>Mit livs rejse</p>
-      <p class="">
-        Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
-        var et godt ophold osv ect. Hokus pokus
-      </p>
-    </a>
-  </div>
-  <div id="card">
-    <a
-      href="#"
-      class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-    >
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Naja
+        </h5>
+        <p>Mit livs rejse</p>
+        <p>
+          Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
+          var et godt ophold osv ect. Hokus pokus
+        </p>
+      </a>
+    </div>
+
+    <div id="card" class="flex justify-center">
+      <a
+        href="https://dk.trustpilot.com/review/www.hojskolendk.dk"
+        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
-        Louise Geers
-      </h5>
-      <p>Mit livs rejse</p>
-      <p class="">
-        Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
-        var et godt ophold osv ect. Hokus pokus
-      </p>
-    </a>
-  </div>
-  <div id="card">
-    <a
-      href="#"
-      class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-    >
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Louise Geers
+        </h5>
+        <p>Mit livs rejse</p>
+        <p>
+          Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
+          var et godt ophold osv ect. Hokus pokus
+        </p>
+      </a>
+    </div>
+
+    <div id="card" class="flex justify-center">
+      <a
+        href="https://dk.trustpilot.com/review/www.hojskolendk.dk"
+        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
-        Anniken
-      </h5>
-      <p>Mit livs rejse</p>
-      <p class="">
-        Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
-        var et godt ophold osv ect. Hokus pokus
-      </p>
-    </a>
-  </div>
-  <div id="card">
-    <a
-      href="#"
-      class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-    >
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Anniken
+        </h5>
+        <p>Mit livs rejse</p>
+        <p>
+          Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
+          var et godt ophold osv ect. Hokus pokus
+        </p>
+      </a>
+    </div>
+
+    <div id="card" class="flex justify-center">
+      <a
+        href="https://dk.trustpilot.com/review/www.hojskolendk.dk"
+        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
-        William D. Birch
-      </h5>
-      <p>Mit livs rejse</p>
-      <p class="">
-        Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
-        var et godt ophold osv ect. Hokus pokus
-      </p>
-    </a>
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          William D. Birch
+        </h5>
+        <p>Mit livs rejse</p>
+        <p>
+          Blødtekst her skriver de om deres oplevesler bla lorem ipsum osv dette
+          var et godt ophold osv ect. Hokus pokus
+        </p>
+      </a>
+    </div>
   </div>
 </section>
