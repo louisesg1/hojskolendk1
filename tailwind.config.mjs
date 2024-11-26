@@ -36,12 +36,13 @@ export default {
       herotext: ["5rem", { lineHeight: "5.rem" }],
       h1text: ["4rem", { lineHeight: "4.5rem" }],
       h2text: ["3.5rem", { lineHeight: "4rem" }],
-      h3text: ["3rem", { lineHeight: "3.5rem" }],
+      h3text: ["2rem", { lineHeight: "2.5rem" }],
       h4text: ["2rem", { lineHeight: "2.5rem" }],
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
     fontWeight: {
+      bold: "800",
       regular: "400",
       light: "100",
     },

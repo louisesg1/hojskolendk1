@@ -1,12 +1,23 @@
+---
+import { Image } from "astro:assets";
+import view from "../assets/images/view.webp";
+import friends from "../assets/images/friends.webp";
+import town from "../assets/images/town.webp";
+import beer from "../assets/images/beer.webp";
+import logo from "../assets/images/logo.svg";
+---
+
 <h2 class="text-h2text">Kort om os!</h2>
-<img src="" alt="logo" />
+<div class="flex justify-center">
+  <Image src={logo} alt="logo" />
+</div>
 <section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
   <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <img src="" alt="bilde" />
+    <Image src={view} alt="view" />
   </div>
   <div>
     <h3>Rejsehøjskole</h3>
-    <p class="">
+    <p class="font-light">
       Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet.
       Du får et tæt fællesskab til de andre unge og helt fantastiske
       rejseoplevelser. Med højskolens kerneværdier, fællesskab og dannelse, kan
@@ -15,7 +26,7 @@
       udvikling med sprog, selvtillid og selvindsigt.
     </p>
     <h4>Fællesskab</h4>
-    <p>
+    <p class="font-light">
       På opholdet vil du møde nye bedste venner og opleve et fantastisk
       fællesskab. I vil som gruppe opbygge stærkt sammenhold, hvor
       undervisningen fokuserer på fællesskab og at rykke grænser. Det har
@@ -25,7 +36,7 @@
       er altid sjove og fyldt med grin og aktiviteter.
     </p>
     <h4>Tryghed</h4>
-    <p>
+    <p class="font-light">
       Når du rejser med HöJSKOLENDK kan du være tryg og nyde din rejse. Alle
       vores pakkerejser er forsikret og du har altid mulighed for at snakke med
       din rejsevejleder, eller at trække dig, hvis du har brug for tid alene.
@@ -38,33 +49,33 @@
 <section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
   <div>
     <h3>Hvorfor HöJSKOLENDK?</h3>
-    <p class="">
+    <p class="font-light">
       Når du rejser med os garanterer vi dig et ophold, der bla. adskiller os
       fra andre højskoleophold i udlandet ved at:
     </p>
     <ul>
-      <li>
+      <li class="font-light">
         Vi har flere rejsevejledere pr. gruppe, med et minimum på 2 vel udlærte
         rejsevejledere.
       </li>
-      <li>
+      <li class="font-light">
         Alt vores personale er trænet i undervisningen samt det pedagogiske
         aspekt. Vores rejseledere fungerer som en storebror eller storesøster.
       </li>
-      <li>
+      <li class="font-light">
         Alt vores undervisning foregår på dansk og der er mulighed for at være
         aktiv.
       </li>
-      <li>
+      <li class="font-light">
         Vores valg af indkvartering er blandt de lokale i trygge områder. Der
         vil derudover altid være mulighed for selv at lave mad og dermed spare
         på lommepengene.
       </li>
-      <li>
+      <li class="font-light">
         Vi giver tilbage til lokalsamfund ved på forskellig vis afhængigt af
         hvilken rejse du vælger.
       </li>
-      <li>
+      <li class="font-light">
         Alle vores rejsepakker inkluderer forsinkringer, der gør at du er
         garanteret at få 100% af dine penge tilbage, hvis der skulle ske noget
         der gør at du bliver forhindret i at kommer afsted på din rejse
@@ -73,21 +84,21 @@
     </ul>
   </div>
   <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <img src="" alt="bilde" />
+    <Image src={friends} alt="friends" />
   </div>
 </section>
 
 <section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
   <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <img src="" alt="bilde" />
+    <Image src={town} alt="town" />
   </div>
   <div>
     <h3>Din dag med HöJSKOLENDK</h3>
-    <p class="">
+    <p class="font-light">
       Alle dage på din rejse er forskellige, men forestil dig noget lignende
       under.
     </p>
-    <p>
+    <p class="font-light">
       På opholdet vil du møde nye bedste venner og opleve et fantastisk
       fællesskab. I vil som gruppe opbygge stærkt sammenhold, hvor
       undervisningen fokuserer på fællesskab og at rykke grænser. Det har
@@ -97,16 +108,16 @@
       er altid sjove og fyldt med grin og aktiviteter.
     </p>
     <h4>Undervisning</h4>
-    <p>
+    <p class="font-light">
       Glæd dig også til inspirerende undervisning, der levende og aktivt forener
       det lærende med det legende. - og bare rolig, det er ikke undervisning som
       du er vandt til. Du kan glæde dig til:
     </p>
     <ul>
-      <li>Ingen mødepligt</li>
-      <li>Aktiv undervisning</li>
-      <li>Selvstændigt og gruppe orienteret undervisning</li>
-      <li>Ingen karakterer eller eksamener</li>
+      <li class="font-light">Ingen mødepligt</li>
+      <li class="font-light">Aktiv undervisning</li>
+      <li class="font-light">Selvstændigt og gruppe orienteret undervisning</li>
+      <li class="font-light">Ingen karakterer eller eksamener</li>
     </ul>
   </div>
 </section>
@@ -114,7 +125,7 @@
 <section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
   <div>
     <h3>Skab minder, der varer evigt!</h3>
-    <p class="">
+    <p class="font-light">
       Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser med
       noget på hjerte”. Udover det fantastiske rejseeventyr handler vores
       højskoleophold i udlandet om dine drømme, mål og ønsker for livet. På
@@ -124,20 +135,20 @@
       meningsfuld fremtid er for dig.
     </p>
     <h4>Find din drømmerejse</h4>
-    <p>
+    <p class="font-light">
       Med vores unikke kombination af højskole, grupperejser, rejseeventyr,
       frihed, kulturmøder og spændende undervisning, vil vi inspirere dig til at
       finde ind til hvad der er vigtigst for dig i livet – hvad du virkeligt
       brænder for og kan mærke er meningsfuldt – så du kan forfølge dine drømme
       og skabe uforglemmelige minder.
     </p>
-    <p>
+    <p class="font-light">
       Find din drømmerejse for at opleve verden og udleve dine rejsedrømme i et
       skønt fællesskab, blive inspireret af dygtige og engagerede undervisere og
       skab minder, der varer evigt!
     </p>
   </div>
   <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <img src="" alt="bilde" />
+    <Image src={beer} alt="beer" />
   </div>
 </section>
