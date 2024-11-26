@@ -33,7 +33,7 @@ export default {
       base: ["1rem", { lineHeight: "1.5rem" }],
       large: ["2.5rem", { lineHeight: "3.75rem" }],
       maintext: ["1rem", { lineHeight: "1.5rem" }],
-      h1text: ["5rem", { lineHeight: "1.5rem" }],
+      herotext: ["4rem", { lineHeight: "1.5rem" }],
     },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
