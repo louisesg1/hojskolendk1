@@ -4,13 +4,11 @@ import view from "../assets/images/view.webp";
 import friends from "../assets/images/friends.webp";
 import town from "../assets/images/town.webp";
 import beer from "../assets/images/beer.webp";
-import logo from "../assets/images/logo.svg";
+import Logo from "../components/Logo.astro";
 ---
 
 <h2 class="text-h2text text-center mb-6">Kort om os!</h2>
-<div class="flex justify-center">
-  <Image src={logo} alt="logo" />
-</div>
+<Logo />
 <section class="pb-40 sm:grid grid-cols-2 lg:ml-0 rounded-md">
   <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0 rounded-md">
     <Image src={view} alt="view" />

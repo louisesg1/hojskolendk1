@@ -1,12 +1,9 @@
 ---
-import { Image } from "astro:assets";
-import logo from "../assets/images/logo.svg";
+import Logo from "../components/Logo.astro";
 ---
 
 <h2 class="text-h2text text-center text-3xl font-semibold mb-8">
   Se vores galleri
 </h2>
 <p class="text-maintext text-center">Venner for livet på dit eventyr</p>
-<div class="flex justify-center">
-  <Image src={logo} alt="logo" />
-</div>
+<Logo />
