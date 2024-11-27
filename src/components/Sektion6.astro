@@ -9,13 +9,13 @@ import Logo from "../components/Logo.astro";
 
 <h2 class="text-h2text text-center mb-6">Kort om os!</h2>
 <Logo />
-<section class="pb-40 sm:grid grid-cols-2 lg:ml-0 rounded-md">
-  <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0 rounded-md">
-    <Image src={view} alt="view" />
+<section class="pb-32 md:grid grid-cols-2 gap-5">
+  <div class="rounded-md order-1">
+    <Image src={view} alt="view" class="rounded-3xl" />
   </div>
-  <div>
+  <div class="order-2">
     <h3>Rejsehøjskole</h3>
-    <p class="font-light">
+    <p class="font-light prose text-maintext text-farvenavn-primary pb-5">
       Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet.
       Du får et tæt fællesskab til de andre unge og helt fantastiske
       rejseoplevelser. Med højskolens kerneværdier, fællesskab og dannelse, kan
@@ -24,7 +24,7 @@ import Logo from "../components/Logo.astro";
       udvikling med sprog, selvtillid og selvindsigt.
     </p>
     <h4>Fællesskab</h4>
-    <p class="font-light">
+    <p class="font-light prose text-maintext text-farvenavn-primary pb-5">
       På opholdet vil du møde nye bedste venner og opleve et fantastisk
       fællesskab. I vil som gruppe opbygge stærkt sammenhold, hvor
       undervisningen fokuserer på fællesskab og at rykke grænser. Det har
@@ -34,7 +34,7 @@ import Logo from "../components/Logo.astro";
       er altid sjove og fyldt med grin og aktiviteter.
     </p>
     <h4>Tryghed</h4>
-    <p class="font-light">
+    <p class="font-light prose text-maintext text-farvenavn-primary pb-5">
       Når du rejser med HöJSKOLENDK kan du være tryg og nyde din rejse. Alle
       vores pakkerejser er forsikret og du har altid mulighed for at snakke med
       din rejsevejleder, eller at trække dig, hvis du har brug for tid alene.
@@ -42,10 +42,10 @@ import Logo from "../components/Logo.astro";
       storesøskende og hjælpe med personlige eller undervisning.
     </p>
   </div>
-</section>
-
-<section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
-  <div>
+  <div class="order-1">
+    <Image src={friends} alt="friends" class="rounded-3xl" />
+  </div>
+  <div class="order-2">
     <h3>Hvorfor HöJSKOLENDK?</h3>
     <p class="font-light">
       Når du rejser med os garanterer vi dig et ophold, der bla. adskiller os
@@ -81,14 +81,8 @@ import Logo from "../components/Logo.astro";
       </li>
     </ul>
   </div>
-  <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <Image src={friends} alt="friends" />
-  </div>
-</section>
-
-<section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
-  <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <Image src={town} alt="town" />
+  <div class="">
+    <Image src={town} alt="town" class="rounded-3xl" />
   </div>
   <div>
     <h3>Din dag med HöJSKOLENDK</h3>
@@ -118,9 +112,6 @@ import Logo from "../components/Logo.astro";
       <li class="font-light">Ingen karakterer eller eksamener</li>
     </ul>
   </div>
-</section>
-
-<section class="pb-40 sm:grid grid-cols-2 lg:ml-0 load">
   <div>
     <h3>Skab minder, der varer evigt!</h3>
     <p class="font-light">
@@ -146,7 +137,7 @@ import Logo from "../components/Logo.astro";
       skab minder, der varer evigt!
     </p>
   </div>
-  <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
-    <Image src={beer} alt="beer" />
+  <div class="">
+    <Image src={beer} alt="beer" class="rounded-3xl" />
   </div>
 </section>
