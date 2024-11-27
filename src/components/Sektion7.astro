@@ -1,27 +1,53 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/images/logo.svg";
+import Logo from "../components/Logo.astro";
+import pic1 from "../assets/images/insta1.webp";
+import pic2 from "../assets/images/insta2.webp";
+import pic3 from "../assets/images/insta4.webp";
+import pic4 from "../assets/images/insta4.webp";
+import pic5 from "../assets/images/insta5.webp";
+import pic6 from "../assets/images/insta6.webp";
+import pic7 from "../assets/images/insta7.webp";
+import pic8 from "../assets/images/insta8.webp";
+import pic9 from "../assets/images/insta9.webp";
 ---
 
 <h2 class="text-h2text text-center">Følg med på Instagram!</h2>
-<div class="flex justify-center">
-  <Image src={logo} alt="logo" />
-</div>
+<Logo />
 
-<div class="flex items-center justify-center">
+<div class="flex items-center justify-center mx-[252px]">
 
   <div class="grid grid-cols-3 gap-3">
 
-    <div class="bg-farvenavn-accent p-3 rounded">img 1</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 2</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 3</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 4</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 5</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 6</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 7</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 8</div>
-    <div class="bg-farvenavn-accent p-3 rounded">img 9</div>
-
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta1.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta2.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta3.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta4.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta5.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta6.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta7.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta8.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    <article >
+      <a href="https://www.instagram.com/hojskolendk/" target="_blank"><img src="../src/assets/images/insta9.webp" alt="insta" class="rounded-lg"></a>
+    </article>
+    
   </div>
 
 </div>
+

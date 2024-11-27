@@ -1,22 +1,20 @@
 ---
-import { Image } from "astro:assets";
-import logo from "../assets/images/logo.svg";
+import Logo from "../components/Logo.astro";
+import Button from "../components/Button.astro";
 ---
 
-<section>
-  <h2 class="text-h2text text-center text-3xl font-semibold mb-2">
+<section class="pb-32">
+  <h2 class="text-h2text text-center text-3xl font-semibold mt-5">
     En rejseoplevelse du aldrig vil glemme
   </h2>
-  <div class="flex justify-center">
-    <Image src={logo} alt="logo" />
-  </div>
-  <div class="m-40">
-    <p class="text-center">
+  <Logo />
+  <div class="flex flex-col items-center">
+    <p class="text-center prose text-farvenavn-primary text-maintext">
       HÖJSKOLENDK er en dansk rejsehøjskole for unge i alderen ca. 18-30 år. Vi
       brænder for spændende oplevelser, fællesskab og mødet med nye mennesker og
       kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
     </p>
-    <p class="text-center pt-5">
+    <p class="text-center prose pt-5 text-farvenavn-primary text-maintext">
       HÖJSKOLENDK er noget for dig, hvis du er vild med højskolefællesskab, men
       på samme tid drømmer om at rejse, lære om fremmede kulturer, vil rejse med
       rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et
@@ -24,6 +22,11 @@ import logo from "../assets/images/logo.svg";
       er er du er sikker på en tryg rejseoplevelse da vi er medlem af
       Rejsegarantifonden.
     </p>
-    <p class="text-center pt-5">Vi glæder os til at lære dig at kende!</p>
+    <p class="text-center prose py-5 text-farvenavn-primary text-maintext">
+      Vi glæder os til at lære dig at kende!
+    </p>
+    <div class="max-w-xl">
+      <a href="#"><Button variant="primary">Tilmeld dig infomøde</Button></a>
+    </div>
   </div>
 </section>

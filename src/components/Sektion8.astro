@@ -1,15 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/images/logo.svg";
 import blog1 from "../assets/images/blog1.webp";
 import blog2 from "../assets/images/blog2.webp";
 import blog3 from "../assets/images/blog3.webp";
+import Logo from "../components/Logo.astro";
 ---
 
 <h2 class="text-h2text text-center mb-6">Læs vores blogs</h2>
-<div class="flex justify-center">
-  <Image src={logo} alt="logo" />
-</div>
+<Logo />
 
 <section class="max-w-7xl mx-auto px-4">
   <div
