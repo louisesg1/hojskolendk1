@@ -10,7 +10,7 @@ export default {
       current: "currentColor",
       farvenavn: {
         primary: "#0A1535",
-        primaryLight: "#FCF9F3",
+        primaryLight: "#F7F1E5",
         accent: "#FF5900",
         detailDark: "#925238",
         detailLight: "#EDE7DD",
