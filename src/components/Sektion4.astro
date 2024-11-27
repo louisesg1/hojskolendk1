@@ -1,5 +1,11 @@
 ---
 import Logo from "../components/Logo.astro";
+import { Image } from "astro:assets";
+import carousel1 from "../assets/images/olivia.webp";
+import carousel2 from "../assets/images/girls.webp";
+import carousel3 from "../assets/images/palm.webp";
+import carousel4 from "../assets/images/riverraft.webp";
+import carousel5 from "../assets/images/friends.webp";
 ---
 
 <section class="pb-32">
@@ -9,3 +15,142 @@ import Logo from "../components/Logo.astro";
   <p class="text-maintext text-center">Venner for livet på dit eventyr</p>
   <Logo />
 </section>
+
+<section class="relative w-full bg-gray-100 pb-32">
+  <div class="relative w-full overflow-hidden gap-5">
+    <div
+      id="carouselItems"
+      class="flex transition-transform duration-700 ease-in-out"
+    >
+      <div class="w-1/3 flex-shrink-0 h-auto rounded-lg px-5 relative">
+        <Image
+          src={carousel4}
+          alt="logo"
+          class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-h3text font-semibold bg-black/50"
+        >
+          <p class="text-farvenavn-primaryLight">Riverrafting på Bali</p>
+        </div>
+      </div>
+
+      <div class="w-1/3 flex-shrink-0 h-auto rounded-lg px-5 relative">
+        <Image
+          src={carousel3}
+          alt="logo"
+          class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-h3text font-semibold bg-black/50"
+        >
+          <p class="text-farvenavn-primaryLight">Se palmer i Australien</p>
+        </div>
+      </div>
+
+      <div class="w-1/3 flex-shrink-0 h-auto rounded-lg relative">
+        <Image
+          src={carousel5}
+          alt="logo"
+          class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-h3text font-semibold bg-black/50"
+        >
+          <p class="text-farvenavn-primaryLight">Venner for livet!</p>
+        </div>
+      </div>
+
+      <div class="w-1/3 flex-shrink-0 h-96 rounded-lg relative">
+        <Image
+          src={carousel2}
+          alt="logo"
+          class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-h3text font-semibold bg-black/50"
+        >
+          <p class="text-farvenavn-primaryLight">Spis is i cuba</p>
+        </div>
+      </div>
+
+      <div class="w-1/3 flex-shrink-0 h-96 rounded-lg relative">
+        <Image
+          src={carousel1}
+          alt="logo"
+          class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-h3text font-semibold bg-black/50"
+        >
+          <p class="text-farvenavn-primaryLight">Sydasien</p>
+        </div>
+      </div>
+    </div>
+
+    <button
+      id="prev"
+      class="absolute top-1/2 left-1 transform -translate-y-1/2 bg-white/70 text-black p-3 rounded-full cursor-pointer"
+    >
+      <svg
+        class="w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <button
+      id="next"
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white/70 text-black p-3 rounded-full cursor-pointer"
+    >
+      <svg
+        class="w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<script>
+  let currentIndex = 0;
+  const itemsPerView = 3;
+
+  const carouselItems = document.getElementById("carouselItems");
+  const totalItems = carouselItems.children.length;
+
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+
+  function updateCarousel() {
+    const offset = (-currentIndex * 100) / itemsPerView;
+    carouselItems.style.transform = `translateX(${offset}%)`;
+  }
+
+  prevButton.addEventListener("click", () => {
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateCarousel();
+  });
+
+  nextButton.addEventListener("click", () => {
+    currentIndex = Math.min(currentIndex + 1, totalItems - itemsPerView);
+    updateCarousel();
+  });
+
+  updateCarousel();
+</script>
