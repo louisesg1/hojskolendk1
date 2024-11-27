@@ -9,7 +9,7 @@ import Logo from "../components/Logo.astro";
 
 <h2 class="text-h2text text-center mb-6">Kort om os!</h2>
 <Logo />
-<section class="pb-32 md:grid grid-cols-2 gap-5">
+<section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
   <div class="rounded-md order-1">
     <Image src={view} alt="view" class="rounded-3xl" />
   </div>
@@ -42,10 +42,12 @@ import Logo from "../components/Logo.astro";
       storesøskende og hjælpe med personlige eller undervisning.
     </p>
   </div>
-  <div class="order-1">
+</section>
+<section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
+  <div class="order-2">
     <Image src={friends} alt="friends" class="rounded-3xl" />
   </div>
-  <div class="order-2">
+  <div class="order-1">
     <h3>Hvorfor HöJSKOLENDK?</h3>
     <p class="font-light">
       Når du rejser med os garanterer vi dig et ophold, der bla. adskiller os
@@ -81,10 +83,12 @@ import Logo from "../components/Logo.astro";
       </li>
     </ul>
   </div>
-  <div class="">
+</section>
+<section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
+  <div class="order-1">
     <Image src={town} alt="town" class="rounded-3xl" />
   </div>
-  <div>
+  <div class="order-2">
     <h3>Din dag med HöJSKOLENDK</h3>
     <p class="font-light">
       Alle dage på din rejse er forskellige, men forestil dig noget lignende
@@ -112,7 +116,12 @@ import Logo from "../components/Logo.astro";
       <li class="font-light">Ingen karakterer eller eksamener</li>
     </ul>
   </div>
-  <div>
+</section>
+<section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
+  <div class="order-2">
+    <Image src={beer} alt="beer" class="rounded-3xl" />
+  </div>
+  <div class="order-1">
     <h3>Skab minder, der varer evigt!</h3>
     <p class="font-light">
       Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser med
@@ -136,8 +145,5 @@ import Logo from "../components/Logo.astro";
       skønt fællesskab, blive inspireret af dygtige og engagerede undervisere og
       skab minder, der varer evigt!
     </p>
-  </div>
-  <div class="">
-    <Image src={beer} alt="beer" class="rounded-3xl" />
   </div>
 </section>
