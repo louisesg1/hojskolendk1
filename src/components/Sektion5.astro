@@ -1,15 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/images/logo.svg";
+import Logo from "../components/Logo.astro";
 ---
 
 <h2 class="text-h2text text-center text-3xl font-semibold mb-8">
   Anmeldelser fra rejsende
 </h2>
 
-<div class="flex justify-center">
-  <Image src={logo} alt="logo" />
-</div>
+<Logo />
 
 <section class="max-w-7xl mx-auto px-4">
   <div
