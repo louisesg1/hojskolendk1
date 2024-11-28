@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logoheader from "../assets/images/logoheader.png";
+import logoheader from "../assets/images/logoheader.webp";
 ---
 
 <div class="bg-farvenavn-primaryLight fixed top-0 z-50 w-full">
@@ -8,13 +8,11 @@ import logoheader from "../assets/images/logoheader.png";
     class="max-w-screen-xl mx-auto flex items-center justify-between text-white py-4 px-6"
   >
     <div class="flex flex-col items-start">
-      <Image
-        src={logoheader}
-        alt="logo"
-        class="absolute inset-0 rounded-lg w-2/12 ml-8 mt-2"
-      />
+      <h4 class="font-bold text-h3text text-farvenavn-accent">HöJSKOLENDK</h4>
+      <p class="text-sm text-farvenavn-detailDark ml-2">
+        Skab minder, der varer evigt!
+      </p>
     </div>
-
     <nav id="desktopmenu">
       <ul class="flex space-x-6 uppercase">
         <li>
