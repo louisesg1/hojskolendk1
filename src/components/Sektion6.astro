@@ -5,6 +5,7 @@ import friends from "../assets/images/friends.webp";
 import town from "../assets/images/town.webp";
 import beer from "../assets/images/beer.webp";
 import Logo from "../components/Logo.astro";
+import Button from "../components/Button.astro";
 ---
 
 <h2 class="text-h2text text-center mb-6">Kort om os!</h2>
@@ -140,10 +141,18 @@ import Logo from "../components/Logo.astro";
       brænder for og kan mærke er meningsfuldt – så du kan forfølge dine drømme
       og skabe uforglemmelige minder.
     </p>
-    <p class="font-light">
+    <p class="font-light pb-5">
       Find din drømmerejse for at opleve verden og udleve dine rejsedrømme i et
       skønt fællesskab, blive inspireret af dygtige og engagerede undervisere og
       skab minder, der varer evigt!
     </p>
+    <div class="flex gap-5">
+      <div class="max-w-xl">
+        <a href="#"><Button variant="primary">Tilmeld dig infomøde</Button></a>
+      </div>
+      <div class="max-w-xl">
+        <a href="#"><Button variant="primary">Find din drømmerejse</Button></a>
+      </div>
+    </div>
   </div>
 </section>
