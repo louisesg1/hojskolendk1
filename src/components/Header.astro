@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logoheader from "../assets/images/logoheader.webp";
+import logo from "../assets/images/logo.svg";
 ---
 
 <div class="bg-farvenavn-primaryLight fixed top-0 z-50 w-full">
@@ -8,8 +8,15 @@ import logoheader from "../assets/images/logoheader.webp";
     class="max-w-screen-xl mx-auto flex items-center justify-between text-white py-4 px-6"
   >
     <div class="flex flex-col items-start">
-      <h4 class="font-bold text-h3text text-farvenavn-accent">HöJSKOLENDK</h4>
-      <p class="text-sm text-farvenavn-detailDark ml-2">
+      <h4 class="font-semibold text-h4text text-farvenavn-accent">
+        HöJSKOLENDK
+      </h4>
+      <Image
+        src={logo}
+        alt="logo"
+        class="absolute inset-0 rounded-lg ml-72 mt-5"
+      />
+      <p class="text-maintext text-farvenavn-detailDark ml-2">
         Skab minder, der varer evigt!
       </p>
     </div>
