@@ -3,6 +3,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
 import "animate.css";
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
 const { title } = Astro.props;
 ---
 
@@ -21,6 +23,13 @@ const { title } = Astro.props;
     <title>{Astro.props.title}</title>
   </head>
   <body class="bg-farvenavn-primaryLight">
+    <div id="customCursor" class="custom-cursor fixed w-16 h-16">
+      <Image
+        src={logo}
+        alt="Custom Cursor"
+        class="absolute inset-0 w-full h-full object-cover rounded-full"
+      />
+    </div>
     <header class="bg-blue-500">
       <Header />
     </header>
@@ -32,5 +41,29 @@ const { title } = Astro.props;
     <footer class="bg-blue-500">
       <Footer />
     </footer>
+    <script>
+      const customCursor = document.getElementById("customCursor");
+
+      document.addEventListener("mousemove", (e) => {
+        const { clientX: x, clientY: y } = e;
+        customCursor.style.transform = `translate(${x - 32}px, ${y - 32}px)`;
+      });
+    </script>
   </body>
 </html>
+
+<style>
+  body {
+    cursor: none;
+  }
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease;
+  }
+</style>
