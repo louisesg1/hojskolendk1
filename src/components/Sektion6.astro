@@ -10,11 +10,11 @@ import Logo from "../components/Logo.astro";
 <h2 class="text-h2text text-center mb-6">Kort om os!</h2>
 <Logo />
 <section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
-  <div class="rounded-md order-1">
+  <div class="rounded-md order-1 self-end">
     <Image src={view} alt="view" class="rounded-3xl" />
   </div>
-  <div class="order-2">
-    <h3>Rejsehøjskole</h3>
+  <div class="order-2 self-end">
+    <h3 class="text-h3text">Rejsehøjskole</h3>
     <p class="font-light prose text-maintext text-farvenavn-primary pb-5">
       Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet.
       Du får et tæt fællesskab til de andre unge og helt fantastiske
@@ -23,7 +23,7 @@ import Logo from "../components/Logo.astro";
       eventyr, afslapning ved smukt vand, vilde naturoplevelser eller personlig
       udvikling med sprog, selvtillid og selvindsigt.
     </p>
-    <h4>Fællesskab</h4>
+    <h4 class="text-h4text">Fællesskab</h4>
     <p class="font-light prose text-maintext text-farvenavn-primary pb-5">
       På opholdet vil du møde nye bedste venner og opleve et fantastisk
       fællesskab. I vil som gruppe opbygge stærkt sammenhold, hvor
@@ -33,7 +33,7 @@ import Logo from "../components/Logo.astro";
       introdage, hvor I som gruppe rystes godt og grundigt sammen. Introdagene
       er altid sjove og fyldt med grin og aktiviteter.
     </p>
-    <h4>Tryghed</h4>
+    <h4 class="text-h4text">Tryghed</h4>
     <p class="font-light prose text-maintext text-farvenavn-primary pb-5">
       Når du rejser med HöJSKOLENDK kan du være tryg og nyde din rejse. Alle
       vores pakkerejser er forsikret og du har altid mulighed for at snakke med
@@ -44,38 +44,38 @@ import Logo from "../components/Logo.astro";
   </div>
 </section>
 <section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
-  <div class="order-2">
+  <div class="order-2 self-end">
     <Image src={friends} alt="friends" class="rounded-3xl" />
   </div>
-  <div class="order-1">
-    <h3>Hvorfor HöJSKOLENDK?</h3>
-    <p class="font-light">
+  <div class="order-1 self-end">
+    <h3 class="text-h3text">Hvorfor HöJSKOLENDK?</h3>
+    <p class="font-light pb-5">
       Når du rejser med os garanterer vi dig et ophold, der bla. adskiller os
       fra andre højskoleophold i udlandet ved at:
     </p>
-    <ul>
-      <li class="font-light">
+    <ul class="list-image-none md:list-image-[url(../assets/images/logo.svg)]">
+      <li class="font-light pb-5]">
         Vi har flere rejsevejledere pr. gruppe, med et minimum på 2 vel udlærte
         rejsevejledere.
       </li>
-      <li class="font-light">
+      <li class="font-light pb-5">
         Alt vores personale er trænet i undervisningen samt det pedagogiske
         aspekt. Vores rejseledere fungerer som en storebror eller storesøster.
       </li>
-      <li class="font-light">
+      <li class="font-light pb-5">
         Alt vores undervisning foregår på dansk og der er mulighed for at være
         aktiv.
       </li>
-      <li class="font-light">
+      <li class="font-light pb-5">
         Vores valg af indkvartering er blandt de lokale i trygge områder. Der
         vil derudover altid være mulighed for selv at lave mad og dermed spare
         på lommepengene.
       </li>
-      <li class="font-light">
+      <li class="font-light pb-5">
         Vi giver tilbage til lokalsamfund ved på forskellig vis afhængigt af
         hvilken rejse du vælger.
       </li>
-      <li class="font-light">
+      <li class="font-light pb-5">
         Alle vores rejsepakker inkluderer forsinkringer, der gør at du er
         garanteret at få 100% af dine penge tilbage, hvis der skulle ske noget
         der gør at du bliver forhindret i at kommer afsted på din rejse
@@ -88,13 +88,13 @@ import Logo from "../components/Logo.astro";
   <div class="order-1">
     <Image src={town} alt="town" class="rounded-3xl" />
   </div>
-  <div class="order-2">
-    <h3>Din dag med HöJSKOLENDK</h3>
-    <p class="font-light">
+  <div class="order-2 pb-5 self-end">
+    <h3 class="text-h3text">Din dag med HöJSKOLENDK</h3>
+    <p class="font-light pb-5">
       Alle dage på din rejse er forskellige, men forestil dig noget lignende
       under.
     </p>
-    <p class="font-light">
+    <p class="font-light pb-5">
       På opholdet vil du møde nye bedste venner og opleve et fantastisk
       fællesskab. I vil som gruppe opbygge stærkt sammenhold, hvor
       undervisningen fokuserer på fællesskab og at rykke grænser. Det har
@@ -103,13 +103,13 @@ import Logo from "../components/Logo.astro";
       introdage, hvor I som gruppe rystes godt og grundigt sammen. Introdagene
       er altid sjove og fyldt med grin og aktiviteter.
     </p>
-    <h4>Undervisning</h4>
-    <p class="font-light">
+    <h4 class="text-h4text">Undervisning</h4>
+    <p class="font-light pb-5">
       Glæd dig også til inspirerende undervisning, der levende og aktivt forener
       det lærende med det legende. - og bare rolig, det er ikke undervisning som
       du er vandt til. Du kan glæde dig til:
     </p>
-    <ul>
+    <ul class="list-image-none md:list-image-[url(../assets/images/logo.svg)]">
       <li class="font-light">Ingen mødepligt</li>
       <li class="font-light">Aktiv undervisning</li>
       <li class="font-light">Selvstændigt og gruppe orienteret undervisning</li>
@@ -118,12 +118,12 @@ import Logo from "../components/Logo.astro";
   </div>
 </section>
 <section class="pb-32 md:grid grid-cols-2 gap-5 items-start">
-  <div class="order-2">
+  <div class="order-2 self-end">
     <Image src={beer} alt="beer" class="rounded-3xl" />
   </div>
   <div class="order-1">
-    <h3>Skab minder, der varer evigt!</h3>
-    <p class="font-light">
+    <h3 class="text-h3text">Skab minder, der varer evigt!</h3>
+    <p class="font-light pb-5">
       Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser med
       noget på hjerte”. Udover det fantastiske rejseeventyr handler vores
       højskoleophold i udlandet om dine drømme, mål og ønsker for livet. På
@@ -132,8 +132,8 @@ import Logo from "../components/Logo.astro";
       mere mod på alt hvad livet byder dig og er mere afklaret omkring hvad en
       meningsfuld fremtid er for dig.
     </p>
-    <h4>Find din drømmerejse</h4>
-    <p class="font-light">
+    <h4 class="text-h4text">Find din drømmerejse</h4>
+    <p class="font-light pb-5">
       Med vores unikke kombination af højskole, grupperejser, rejseeventyr,
       frihed, kulturmøder og spændende undervisning, vil vi inspirere dig til at
       finde ind til hvad der er vigtigst for dig i livet – hvad du virkeligt
